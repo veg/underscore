@@ -1603,4 +1603,9 @@
       return _;
     });
   }
+
+  if (typeof define === "function" && define.amd) define(_); else if (typeof module === "object" && module.exports) module.exports = _;
+  this._ = _;
+
+
 }());
